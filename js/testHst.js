@@ -6,11 +6,11 @@ QUnit.test( "a basic test example", function( assert ) {
   });
   QUnit.test( "Ontario Sales Tax", function( assert ) {
     const oHst = new Hst();
-    assert.equal( oHst.calculate(10, 'ON'), 1.30, "We expect HST to be 1.30" );
+    assert.equal( oHst.calculate(5, 'ON'), 27.19, "We expect HST to be 1.30" );
   });
   QUnit.test( "Alberta Sales Tax", function( assert ) {
     const oHst = new Hst();
-    assert.equal( oHst.calculate(10, 'AB'), .50, "We expect HST to be $.50" );
+    assert.equal( oHst.calculate(10, 'AB'), 103.32, "We expect HST to be $.50" );
   });
   QUnit.test( "Asdf Sales Tax", function( assert ) {
     const oHst = new Hst();
@@ -22,10 +22,10 @@ QUnit.test( "a basic test example", function( assert ) {
     }
     QUnit.test( "Manitoba", function( assert ) {
       const oHst = new Hst();
-      assert.equal( oHst.calculate(10, 'MB'), 1.2, "We expect HST to be $1.20" );
+      assert.equal( oHst.calculate(10, 'MB'), 69.26, "We expect HST to be $1.20" );
     });
     QUnit.test( "Quebec", function( assert ) {
         const oHst = new Hst();
-        assert.equal( oHst.calculate(10, 'QC'), 1.50, "We expect HST to be $1.50" );
+        assert.equal( oHst.calculate(10, 'QC'), 43.37, "We expect HST to be $1.50" );
     });
   });
